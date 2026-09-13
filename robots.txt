@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://imanevoyages.com/sitemap.xml
+Sitemap: https://imanevoyagebf.com/sitemap.xml
