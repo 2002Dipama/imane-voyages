@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imanevoyages.com/sitemap.xml

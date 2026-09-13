@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Temp files
+*.tmp
+*.log
+
+# Source CSS (only deploy minified)
+# css/styles.css is kept for development
