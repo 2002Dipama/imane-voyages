@@ -1165,6 +1165,11 @@ p { margin: 0; }
   color: var(--iv-white);
 }
 
+.section--green .form-group select option {
+  background: var(--iv-white);
+  color: var(--iv-grey-700);
+}
+
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
