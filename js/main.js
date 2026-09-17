@@ -176,6 +176,31 @@
     });
   });
 
+  // --- WhatsApp contact form ---
+  var contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var prenom = document.getElementById('prenom').value.trim();
+      var nom = document.getElementById('nom').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var tel = document.getElementById('telephone').value.trim();
+      var serviceEl = document.getElementById('service');
+      var service = serviceEl.options[serviceEl.selectedIndex].text;
+      var message = document.getElementById('message').value.trim();
+
+      var text = 'Bonjour Imane Voyages,\n\n';
+      text += '*Nom :* ' + prenom + ' ' + nom + '\n';
+      if (email) text += '*Email :* ' + email + '\n';
+      if (tel) text += '*Téléphone :* ' + tel + '\n';
+      if (serviceEl.value) text += '*Service :* ' + service + '\n';
+      if (message) text += '\n*Message :*\n' + message;
+
+      var url = 'https://wa.me/22670432533?text=' + encodeURIComponent(text);
+      window.open(url, '_blank');
+    });
+  }
+
   // --- Typewriter animation ---
   var typewriterEls = document.querySelectorAll('[data-typewriter]');
   if (typewriterEls.length > 0) {
